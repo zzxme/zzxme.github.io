@@ -6,7 +6,7 @@
     <meta name="referrer" content="origin">
     <meta http-equiv="Cache-Control" content="no-transform">
     <meta http-equiv="Cache-Control" content="no-siteapp">
-    <title>Hello World</title>
+    <title>Github配合Jenkins，实现vue等前端项目的自动构建与发布</title>
 
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/first19326/cdn@master/static/font/LongCang.css">
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/first19326/cdn@master/static/font/Monda.css">
@@ -32,19 +32,19 @@
     <div class="header">
         <div class="vertical">
             <div class="inner">
-                <h1 class="header-subtitle">Hello World</h1>
+                <h1 class="header-subtitle">Github配合Jenkins，实现vue等前端项目的自动构建与发布</h1>
                 <div class="header-subinfo">
                     <p class="article-info-text">
                         <span>
-                            <i class="iconfont icon-time"></i> 发表时间：2020-01-01
+                            <i class="iconfont icon-time"></i> 发表时间：2021-01-18
                         </span>
                         
-                            <span id="/2020/01/01/HelloWorld/" class="leancloud_visitors" data-flag-title="Hello World">
+                            <span id="/2021/01/18/jenkins/" class="leancloud_visitors" data-flag-title="Github配合Jenkins，实现vue等前端项目的自动构建与发布">
                                 <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
                             </span>
                         
                         <span>
-                            <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2020/01/01/HelloWorld/"></span>
+                            <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2021/01/18/jenkins/"></span>
                         </span>  
                     </p>                 
                 </div>
@@ -58,27 +58,19 @@
         <div id="article">
     <div class="toc"></div>
     <div class="article-body">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+        <p>本篇文章前端项目以vue为例（其实前端工程化项目的操作方法都相同），部署在Linux系统上（centos）。<br>之前做前端项目的部署，一直都是手动运行打包命令，打包完。再使用FTP、Xshell等这类的工具上传到服务器。这种方式不仅效率不高，而且容易出错，一不小心就放错地方了。或者公司有运维，只需要打包前端项目代码后发给运维就不管了，但是一般的小公司是没有运维的。所以呢，就在找有没有什么工具可以自动帮我完成这些操作，于是就找到了下面这货，名字叫做Jenkins。随着用的越来越多，越来越顺心，这小老头也是越看越顺眼了！！！</p>
+<h2 id="一、Jenkins的安装与配置"><a href="#一、Jenkins的安装与配置" class="headerlink" title="一、Jenkins的安装与配置"></a>一、Jenkins的安装与配置</h2><h4 id="1-java环境的搭建"><a href="#1-java环境的搭建" class="headerlink" title="1. java环境的搭建"></a>1. java环境的搭建</h4><h4 id="2-安装Jenkins"><a href="#2-安装Jenkins" class="headerlink" title="2. 安装Jenkins"></a>2. 安装Jenkins</h4><h4 id="3-Jenkins的初始化使用"><a href="#3-Jenkins的初始化使用" class="headerlink" title="3. Jenkins的初始化使用"></a>3. Jenkins的初始化使用</h4><h4 id="4-配置自动部署任务"><a href="#4-配置自动部署任务" class="headerlink" title="4. 配置自动部署任务"></a>4. 配置自动部署任务</h4><h2 id="二、GitHub-Jenkins联动配置"><a href="#二、GitHub-Jenkins联动配置" class="headerlink" title="二、GitHub+Jenkins联动配置"></a>二、GitHub+Jenkins联动配置</h2><h4 id="1-创建-github-AccessToken"><a href="#1-创建-github-AccessToken" class="headerlink" title="1. 创建 github AccessToken"></a>1. 创建 github AccessToken</h4><h4 id="2-Jenkins添加github插件"><a href="#2-Jenkins添加github插件" class="headerlink" title="2. Jenkins添加github插件"></a>2. Jenkins添加github插件</h4><h2 id="三、Git-push测试"><a href="#三、Git-push测试" class="headerlink" title="三、Git push测试"></a>三、Git push测试</h2><h2 id="At-ast，看完之后有什么不懂的，可以留言反馈。"><a href="#At-ast，看完之后有什么不懂的，可以留言反馈。" class="headerlink" title="At  ast，看完之后有什么不懂的，可以留言反馈。"></a>At  ast，看完之后有什么不懂的，可以留言反馈。</h2>
         <p class="suffix-end">__END__</p>
         <div class="suffix-box">
             <div class="suffix-box-left">
-                <img src="https://www.notes.worstone.cn/image/hexo.png" alt="Hexo">
+                <img src="/images/avatar/avatar.jpg" alt="zzxme">
             </div>
             <div class="suffix-box-right">
-                <span class="suffix-box-title">文章作者</span>：Hexo
+                <span class="suffix-box-title">文章作者</span>：zzxme
                 <br>
-                <span class="suffix-box-title">文章出处</span>：<a href="https://hexo.io/" target="_blank">Hexo</a>
+                <span class="suffix-box-title">文章出处</span>：<a href="/2021/01/18/jenkins/" target="_blank">Github配合Jenkins，实现vue等前端项目的自动构建与发布</a>
                 <br>
-                <span class="suffix-box-title">作者签名</span>：快速、简洁且高效的博客框架
+                <span class="suffix-box-title">作者签名</span>：简单地活着, 肆意又精彩.
                 <br>
                 <span class="suffix-box-title">关于主题</span>：<a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
                 <br>
@@ -93,7 +85,7 @@
             <div class="category">
                 分类：
                 
-                    <a href="/category/Web/">Web</a>
+                    <a href="/category/Technology/">Technology</a>
                 
             </div>
         
@@ -101,15 +93,17 @@
             <div class="tag">
                 标签：
                 
-                    <a href="/tag/Hexo/">Hexo</a>
+                    <a href="/tag/Jenkins/">Jenkins</a>
                 
             </div>
         
         <div class="article-prev-next">
             
-                <a href="/2020/08/01/Hexo%E4%B8%BB%E9%A2%98LiveForCode%E4%BB%8B%E7%BB%8D/" class="prev-prefix">« </a> 上一篇：    <a href="/2020/08/01/Hexo%E4%B8%BB%E9%A2%98LiveForCode%E4%BB%8B%E7%BB%8D/" title="发布于 2020-08-01 12:00">Hexo主题LiveForCode介绍</a>
+                <a href="/2021/03/12/thin/" class="prev-prefix">« </a> 上一篇：    <a href="/2021/03/12/thin/" title="发布于 2021-03-12 12:00">我曾经瘦过，想到就心酸</a>
                 <br>
             
+            
+                <a href="/2020/12/31/blessing/" class="next-prefix">» </a> 下一篇：    <a href="/2020/12/31/blessing/" title="发布于 2020-12-31 08:12">2021新年快乐</a>
             
         </div>
     </div>
