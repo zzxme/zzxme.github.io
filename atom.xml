@@ -6,7 +6,7 @@
   <link href="https://zzx.me/atom.xml" rel="self"/>
   
   <link href="https://zzx.me/"/>
-  <updated>2021-06-17T10:17:50.649Z</updated>
+  <updated>2021-07-20T08:42:18.821Z</updated>
   <id>https://zzx.me/</id>
   
   <author>
@@ -17,23 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>weight-loss</title>
-    <link href="https://zzx.me/2021/06/17/weight-loss/"/>
-    <id>https://zzx.me/2021/06/17/weight-loss/</id>
-    <published>2021-06-17T10:09:01.000Z</published>
-    <updated>2021-06-17T10:17:50.649Z</updated>
+    <title>我曾经瘦过，想到就心酸</title>
+    <link href="https://zzx.me/2021/03/12/%E6%88%91%E6%9B%BE%E7%BB%8F%E7%98%A6%E8%BF%87%EF%BC%8C%E6%83%B3%E5%88%B0%E5%B0%B1%E5%BF%83%E9%85%B8/"/>
+    <id>https://zzx.me/2021/03/12/%E6%88%91%E6%9B%BE%E7%BB%8F%E7%98%A6%E8%BF%87%EF%BC%8C%E6%83%B3%E5%88%B0%E5%B0%B1%E5%BF%83%E9%85%B8/</id>
+    <published>2021-03-11T16:00:00.000Z</published>
+    <updated>2021-07-20T08:42:18.821Z</updated>
     
     <content type="html"><![CDATA[<p>准备出一个减重的系列<br>haah</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;准备出一个减重的系列&lt;br&gt;haah&lt;/p&gt;
-</summary>
-      
+    <summary type="html">你只有把一件事做到最极致，你才能被看到。没有理由，瘦就是了。</summary>
     
     
     
+    <category term="live" scheme="https://zzx.me/category/live/"/>
+    
+    
+    <category term="生活 随写" scheme="https://zzx.me/tag/%E7%94%9F%E6%B4%BB-%E9%9A%8F%E5%86%99/"/>
     
   </entry>
   
@@ -42,7 +42,7 @@
     <link href="https://zzx.me/2021/01/18/Github%E9%85%8D%E5%90%88Jenkins%EF%BC%8C%E5%AE%9E%E7%8E%B0vue%E7%AD%89%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E4%B8%8E%E5%8F%91%E5%B8%83/"/>
     <id>https://zzx.me/2021/01/18/Github%E9%85%8D%E5%90%88Jenkins%EF%BC%8C%E5%AE%9E%E7%8E%B0vue%E7%AD%89%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E7%9A%84%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E4%B8%8E%E5%8F%91%E5%B8%83/</id>
     <published>2021-01-18T10:18:18.000Z</published>
-    <updated>2021-07-20T08:29:58.736Z</updated>
+    <updated>2021-07-20T08:32:39.481Z</updated>
     
     <content type="html"><![CDATA[<p>本篇文章前端项目以vue为例（其实前端工程化项目的操作方法都相同），部署在Linux系统上（centos）。<br>之前做前端项目的部署，一直都是手动运行打包命令，打包完。再使用FTP、Xshell等这类的工具上传到服务器。这种方式不仅效率不高，而且容易出错，一不小心就放错地方了。或者公司有运维，只需要打包前端项目代码后发给运维就不管了，但是一般的小公司是没有运维的。所以呢，就在找有没有什么工具可以自动帮我完成这些操作，于是就找到了下面这货，名字叫做Jenkins。随着用的越来越多，越来越顺心，这小老头也是越看越顺眼了！！！</p><h2 id="一、Jenkins的安装与配置"><a href="#一、Jenkins的安装与配置" class="headerlink" title="一、Jenkins的安装与配置"></a>一、Jenkins的安装与配置</h2><h4 id="1-java环境的搭建"><a href="#1-java环境的搭建" class="headerlink" title="1. java环境的搭建"></a>1. java环境的搭建</h4><h4 id="2-安装Jenkins"><a href="#2-安装Jenkins" class="headerlink" title="2. 安装Jenkins"></a>2. 安装Jenkins</h4><h4 id="3-Jenkins的初始化使用"><a href="#3-Jenkins的初始化使用" class="headerlink" title="3. Jenkins的初始化使用"></a>3. Jenkins的初始化使用</h4><h4 id="4-配置自动部署任务"><a href="#4-配置自动部署任务" class="headerlink" title="4. 配置自动部署任务"></a>4. 配置自动部署任务</h4><h2 id="二、GitHub-Jenkins联动配置"><a href="#二、GitHub-Jenkins联动配置" class="headerlink" title="二、GitHub+Jenkins联动配置"></a>二、GitHub+Jenkins联动配置</h2><h4 id="1-创建-github-AccessToken"><a href="#1-创建-github-AccessToken" class="headerlink" title="1. 创建 github AccessToken"></a>1. 创建 github AccessToken</h4><h4 id="2-Jenkins添加github插件"><a href="#2-Jenkins添加github插件" class="headerlink" title="2. Jenkins添加github插件"></a>2. Jenkins添加github插件</h4><h2 id="三、Git-push测试"><a href="#三、Git-push测试" class="headerlink" title="三、Git push测试"></a>三、Git push测试</h2><h2 id="At-ast，看完之后有什么不懂的，可以留言反馈。"><a href="#At-ast，看完之后有什么不懂的，可以留言反馈。" class="headerlink" title="At  ast，看完之后有什么不懂的，可以留言反馈。"></a>At  ast，看完之后有什么不懂的，可以留言反馈。</h2>]]></content>
     
@@ -54,7 +54,7 @@
     <category term="Web" scheme="https://zzx.me/category/Web/"/>
     
     
-    <category term="Jenkins" scheme="https://zzx.me/tag/Jenkins/"/>
+    <category term="Github Jenkins" scheme="https://zzx.me/tag/Github-Jenkins/"/>
     
   </entry>
   
@@ -63,25 +63,19 @@
     <link href="https://zzx.me/2020/12/31/blessing/"/>
     <id>https://zzx.me/2020/12/31/blessing/</id>
     <published>2020-12-31T12:12:31.000Z</published>
-    <updated>2021-01-03T02:59:41.988Z</updated>
+    <updated>2021-07-20T08:35:32.190Z</updated>
     
     <content type="html"><![CDATA[<p>🎉🎉🎉🎉 Happy New Year! 🎉🎉🎉🎉</p><img src="/2020/12/31/blessing/newyear.jpg" class="post-image"><p>夜深了，<br>crud boy 给自己倒了一杯酒，<br>坐下来回想过去的一年，<br>没完成什么大事，<br>主要的突破在于更深入的了解了很多人。<br>确实有明确不宜深交的，<br>但庆幸地是更多的是可以托付的。<br>这一年其实很多答应的事情之后都没有做到，<br>虽然客观原因很充分，<br>可是没做到就是没做到，<br>牛逼的是不同项目几乎所有合作的小伙伴都好不迟疑地陪我走了下去。<br>对家里人来说，秋天的第一杯奶茶没有给她喝上，<br>对小伙伴而言，入冬的第一口西北风估计喝了不少。<br>收拾收拾，<br>然后攒几段方案，<br>接着写几行Bug，<br>就该新的一年了，<br>接着努力吧…</p><img src="/2020/12/31/blessing/fireworks.jpg" class="post-image">]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;🎉🎉🎉🎉 Happy New Year! 🎉🎉🎉🎉&lt;/p&gt;
-&lt;img src=&quot;/2020/12/31/blessing/newyear.jpg&quot; class=&quot;post-image&quot;&gt;
-
-&lt;p&gt;夜深了，&lt;br&gt;crud boy 给自己倒了一杯酒，&lt;br&gt;坐</summary>
-      
+    <summary type="html">2021要快乐</summary>
     
     
     
     <category term="live" scheme="https://zzx.me/category/live/"/>
     
     
-    <category term="-生活 -随写" scheme="https://zzx.me/tag/%E7%94%9F%E6%B4%BB-%E9%9A%8F%E5%86%99/"/>
+    <category term="生活 随写" scheme="https://zzx.me/tag/%E7%94%9F%E6%B4%BB-%E9%9A%8F%E5%86%99/"/>
     
   </entry>
   
@@ -90,26 +84,19 @@
     <link href="https://zzx.me/2020/12/25/first/"/>
     <id>https://zzx.me/2020/12/25/first/</id>
     <published>2020-12-25T12:12:25.000Z</published>
-    <updated>2021-06-18T02:18:42.392Z</updated>
+    <updated>2021-07-20T08:37:47.459Z</updated>
     
     <content type="html"><![CDATA[<p>🎄🎄🎄🎄 merry christmas 🎄🎄🎄🎄</p><img src="/2020/12/25/first/camera.jpeg" class="post-image" width="300"><p>今天是圣诞节，也是我的生日…</p><img src="/2020/12/25/first/message.png" class="post-image" width="300"><p>再次在圣诞节收到了各个银行的生日祝福短信，不知道有没有跟我是同一天的小伙伴呢？<br>我也在这里祝福大家在未来的日子里幸福、平安、快乐！</p><img src="/2020/12/25/first/money.jpg" class="post-image" width="300"><p>凑巧赶个好日子，写下自己的第一篇博客，还没想好如何定位这个地方<br>大家也可以把这里当做树洞，一个可以袒露心声的地方。<br>希望在这里认识更多的人，找到一些志同道合的朋友，可以共同学习,共同进步，体会人生的酸甜苦辣！</p><img src="/2020/12/25/first/fortune.jpg" class="post-image" width="300"><!-- ![money](money.jpg) --><!-- <img src="/2020/12/25/first/money.jpg" class="" title="This is an example image"> --><!-- 备忘https://github.com/first19326/hexo-liveforcode20210618切换主题hexo-liveforcode -->]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;🎄🎄🎄🎄 merry christmas 🎄🎄🎄🎄&lt;/p&gt;
-&lt;img src=&quot;/2020/12/25/first/camera.jpeg&quot; class=&quot;post-image&quot; width=&quot;300&quot;&gt;
-
-&lt;p&gt;今天是圣诞节，也是我的生日…&lt;/p&gt;
-&lt;im</summary>
-      
+    <summary type="html">my first</summary>
     
     
     
     <category term="live" scheme="https://zzx.me/category/live/"/>
     
     
-    <category term="-生活 -随写" scheme="https://zzx.me/tag/%E7%94%9F%E6%B4%BB-%E9%9A%8F%E5%86%99/"/>
+    <category term="生活 随写" scheme="https://zzx.me/tag/%E7%94%9F%E6%B4%BB-%E9%9A%8F%E5%86%99/"/>
     
   </entry>
   
