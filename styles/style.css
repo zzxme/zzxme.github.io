@@ -108,7 +108,7 @@ h3 {
 }
 
 .listItem[data-item="figma"] a:hover svg path {
-  fill: #89DFBC;
+  fill: #ff7637;
 }
 
 .listItem[data-item="ui8"] a:hover svg path {
@@ -124,7 +124,7 @@ h3 {
 }
 
 .listItem[data-item="github"] a:hover svg {
-  fill: #fffbe8;
+  fill: #ff7637;
 }
 
 .copyright {
